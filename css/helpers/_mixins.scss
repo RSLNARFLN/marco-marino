@@ -1,0 +1,19 @@
+// rend les liens accordés au design de la page
+@mixin link-neutralizer {
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: $link-size;
+  }
+}
+
+// Pour les onglets
+@mixin before-config {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}

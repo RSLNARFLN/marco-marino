@@ -1,0 +1,33 @@
+footer {
+  display: flex;
+  margin-top: $margin-topbottom;
+  margin-bottom: $margin-topbottom;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+
+  a:first-child {
+    margin-left: $margin-extra;
+  }
+
+  a {
+    margin-left: $margin-sides;
+    margin-right: $margin-sides;
+  }
+
+  span {
+    margin-left: auto;
+    margin-right: $margin-extra;
+    color: $notes-color;
+    font-size: $notes-size;
+    font-style: italic;
+  }
+
+  @include link-neutralizer
+}
+
+.abt-foot {
+  position: relative;
+  margin-top: 100px;
+  bottom: 0;
+}

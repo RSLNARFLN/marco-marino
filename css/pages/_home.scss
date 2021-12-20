@@ -1,0 +1,33 @@
+#index-main {
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include link-neutralizer;
+  margin-left: $margin-main;
+  margin-right: $margin-main;
+
+  h1 {
+    font-size: 124px;
+    width: 80%;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 84px;
+      width: 80%;
+    }
+
+    @media screen and (max-width: 1000px) {
+      font-size: 68px;
+      width: 80%;
+    }
+  }
+
+  a::before {
+    content: '—';
+    margin-right: 10px;
+  }
+
+  p {
+    font-style: italic;
+  }
+}

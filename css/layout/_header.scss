@@ -1,0 +1,32 @@
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: $margin-topbottom;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+
+  a:hover {
+    text-decoration: line-through;
+  }
+
+  a:first-child:hover {
+    text-decoration: none;
+  }
+
+  a:first-child {
+    margin-right: auto;
+    margin-left: $margin-extra;
+  }
+
+  a:last-child {
+    margin-right: $margin-extra;
+  }
+
+  a {
+    margin-left: $margin-sides;
+    margin-right: $margin-sides;
+    margin-top: $margin-topdown;
+  }
+  @include link-neutralizer;
+}

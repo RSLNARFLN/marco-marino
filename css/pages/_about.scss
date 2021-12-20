@@ -1,0 +1,46 @@
+.about-page {
+  main {
+    // height: 90vh;
+    width: 75vw;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    .bg-image {
+      height: 600px;
+      background: url('../img/IMG_0055-min.jpg') center/cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      margin-top: 50px;
+    }
+
+    .second-cat {
+      display: flex;
+      justify-content: space-between;
+
+      h3 {
+        font-weight: normal;
+      }
+
+      div {
+        width: 50%;
+      }
+
+      p {
+        margin: 20px 0px;
+        line-height: 30px;
+      }
+
+      .last-p {
+        margin-bottom: 40px;
+      }
+
+      .other-btn {
+      text-decoration: none;
+      color: white;
+      margin-left: 20px;
+      }
+    }
+  }
+}
